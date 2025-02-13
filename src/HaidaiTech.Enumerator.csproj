@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TargetFrameworks>netstandard2.1;net9.0</TargetFrameworks>
+    <PackageId>HaidaiTech.Notificator</PackageId>
+    <Version>4.0.0</Version>
+    <icon>https://www.HaidaiTech.com.br/nuget/notificator/icon.png</icon>
+    <License>MIT</License>
+    <Authors>Julien nascimento</Authors>
+    <Company>Haidai Tech</Company>
+    <PackageDescription>An Enumerator Project. </PackageDescription>
+    <Description>Avoid exceptions, use Notification Context pattern</Description>
+    <RepositoryUrl>https://github.com/Haidai-Tech/notificator</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Haidai-Tech/Notificator</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageTags>Domain;DDD;Notification;Validation;Notificator</PackageTags>
+    <ReleaseNotes></ReleaseNotes>
+    <Title>Notificator</Title>
+    <Summary>Notificator is a Notification Pattern with your entities.</Summary>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+  </PropertyGroup>
+
+</Project>

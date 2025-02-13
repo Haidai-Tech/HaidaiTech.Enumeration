@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaidaiTech.Enumerator", "src\HaidaiTech.Enumerator.csproj", "{17785FD9-B825-4C79-8851-B92F677ED2C5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{250286E4-A7B1-426B-B4F2-AD3346C01493}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaidaiTech.Enumerator.Tests", "tests\HaidaiTech.Enumerator.Tests\HaidaiTech.Enumerator.Tests.csproj", "{CAE71FA7-DB5B-493B-9B5A-2A14F9D18A41}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17785FD9-B825-4C79-8851-B92F677ED2C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17785FD9-B825-4C79-8851-B92F677ED2C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17785FD9-B825-4C79-8851-B92F677ED2C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17785FD9-B825-4C79-8851-B92F677ED2C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAE71FA7-DB5B-493B-9B5A-2A14F9D18A41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAE71FA7-DB5B-493B-9B5A-2A14F9D18A41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAE71FA7-DB5B-493B-9B5A-2A14F9D18A41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAE71FA7-DB5B-493B-9B5A-2A14F9D18A41}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{CAE71FA7-DB5B-493B-9B5A-2A14F9D18A41} = {250286E4-A7B1-426B-B4F2-AD3346C01493}
+	EndGlobalSection
+EndGlobal
