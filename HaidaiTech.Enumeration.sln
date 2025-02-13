@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaidaiTech.Enumerator", "src\HaidaiTech.Enumerator.csproj", "{17785FD9-B825-4C79-8851-B92F677ED2C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaidaiTech.Enumeration", "src\HaidaiTech.Enumeration.csproj", "{17785FD9-B825-4C79-8851-B92F677ED2C5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{250286E4-A7B1-426B-B4F2-AD3346C01493}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaidaiTech.Enumerator.Tests", "tests\HaidaiTech.Enumerator.Tests\HaidaiTech.Enumerator.Tests.csproj", "{CAE71FA7-DB5B-493B-9B5A-2A14F9D18A41}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HaidaiTech.Enumeration.Tests", "tests\HaidaiTech.Enumeration.Tests\HaidaiTech.Enumeration.Tests.csproj", "{CAE71FA7-DB5B-493B-9B5A-2A14F9D18A41}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

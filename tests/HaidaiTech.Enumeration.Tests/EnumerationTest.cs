@@ -1,4 +1,4 @@
-﻿namespace HaidaiTech.Enumerator.Tests;
+﻿namespace HaidaiTech.Enumeration.Tests;
 
 
 public class EnumerationTest

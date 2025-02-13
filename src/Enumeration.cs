@@ -1,6 +1,6 @@
 using System.Reflection;
 
-namespace HaidaiTech.Enumerator;
+namespace HaidaiTech.Enumeration;
 
 public abstract class Enumeration : IComparable
 {
@@ -29,12 +29,12 @@ public abstract class Enumeration : IComparable
                 .Cast<T>();
 
     /// <summary>
-    /// Finds an enumerator by ID.
+    /// Finds an Enumeration by ID.
     /// </summary>
     /// <typeparam name="T">The type of the enumeration.</typeparam>
-    /// <param name="id">The ID of the enumerator.</param>
-    /// <returns>The enumerator corresponding to the ID.</returns>
-    /// <exception cref="InvalidOperationException">If no enumerator with the provided ID is found.</exception>
+    /// <param name="id">The ID of the Enumeration.</param>
+    /// <returns>The Enumeration corresponding to the ID.</returns>
+    /// <exception cref="InvalidOperationException">If no Enumeration with the provided ID is found.</exception>
     public static T FromId<T>(int id) where T : Enumeration
     {
         var matchingItem = GetAll<T>().FirstOrDefault(item => item.Id == id);
@@ -44,12 +44,12 @@ public abstract class Enumeration : IComparable
     }
 
     /// <summary>
-    /// Finds an enumerator by name.
+    /// Finds an Enumeration by name.
     /// </summary>
     /// <typeparam name="T">The type of the enumeration.</typeparam>
-    /// <param name="name">The name of the enumerator.</param>
-    /// <returns>The enumerator corresponding to the name.</returns>
-    /// <exception cref="InvalidOperationException">If no enumerator with the provided name is found.</exception>
+    /// <param name="name">The name of the Enumeration.</param>
+    /// <returns>The Enumeration corresponding to the name.</returns>
+    /// <exception cref="InvalidOperationException">If no Enumeration with the provided name is found.</exception>
     public static T FromName<T>(string name) where T : Enumeration
     {
         var matchingItem = GetAll<T>().FirstOrDefault(item => item.Name.Equals(name, StringComparison.OrdinalIgnoreCase));
@@ -59,12 +59,12 @@ public abstract class Enumeration : IComparable
     }
 
     /// <summary>
-    /// Finds an enumerator by flag.
+    /// Finds an Enumeration by flag.
     /// </summary>
     /// <typeparam name="T">The type of the enumeration.</typeparam>
-    /// <param name="flag">The flag of the enumerator.</param>
-    /// <returns>The enumerator corresponding to the flag.</returns>
-    /// <exception cref="InvalidOperationException">If no enumerator with the provided flag is found.</exception>
+    /// <param name="flag">The flag of the Enumeration.</param>
+    /// <returns>The Enumeration corresponding to the flag.</returns>
+    /// <exception cref="InvalidOperationException">If no Enumeration with the provided flag is found.</exception>
     public static T FromFlag<T>(string flag) where T : Enumeration
     {
         var matchingItem = GetAll<T>().FirstOrDefault(item => item.Flag != null && item.Flag.Equals(flag, StringComparison.OrdinalIgnoreCase));

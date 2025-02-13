@@ -1,7 +1,7 @@
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace HaidaiTech.Enumerator.Conversors
+namespace HaidaiTech.Enumeration.Conversors
 {
     public class EnumerationConverter<T> : JsonConverter<T> where T : Enumeration
     {

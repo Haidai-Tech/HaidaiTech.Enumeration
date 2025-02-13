@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <TargetFrameworks>netstandard2.1;net9.0</TargetFrameworks>
+    <PackageId>HaidaiTech.Enumeration</PackageId>
+    <Version>1.0.0</Version>
+    <icon>https://github.com/Haidai-Tech/HaidaiTech.Enumeration/blob/main/images/icon.png</icon>
+    <License>MIT</License>
+    <Authors>Julien nascimento</Authors>
+    <Company>Haidai Tech</Company>
+    <PackageDescription>An Enumeration Project.</PackageDescription>
+    <Description>Enumerations (or enum types for short) are a thin language wrapper around an
+      integral type. You might want to limit their use to when you are storing one value from a
+      closed set of values. Classification based on sizes (small, medium, large) is a good example.
+      Using enums for control flow or more robust abstractions can be a code smell. This type of
+      usage leads to fragile code with many control flow statements checking values of the enum.
+      For more, please, visit https://tinyurl.com/dotnetEnumeration</Description>
+    <RepositoryUrl>https://github.com/Haidai-Tech/HaidaiTech.Enumeration</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/Haidai-Tech/HaidaiTech.Enumeration/</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageTags>Enum;Enumeration</PackageTags>
+    <ReleaseNotes></ReleaseNotes>
+    <Title>Enumeration</Title>
+    <Summary>Use enumeration classes instead of enum types</Summary>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+  </PropertyGroup>
+
+</Project>
