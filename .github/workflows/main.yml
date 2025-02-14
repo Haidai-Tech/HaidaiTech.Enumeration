@@ -21,7 +21,7 @@ jobs:
       run: dotnet build --configuration Release
 
     - name: Test
-      run: dotnet test
+      run: dotnet test --logger:"console;verbosity=detailed"
 
     - name: Create the Package
       run: dotnet pack --configuration Release

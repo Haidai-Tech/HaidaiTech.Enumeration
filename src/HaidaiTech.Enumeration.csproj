@@ -4,10 +4,9 @@
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <TargetFrameworks>netstandard2.1;net9.0</TargetFrameworks>
     <PackageId>HaidaiTech.Enumeration</PackageId>
     <Version>1.0.0</Version>
-    <icon>https://github.com/Haidai-Tech/HaidaiTech.Enumeration/blob/main/images/icon.png</icon>
+    <icon>https://github.com/Haidai-Tech/HaidaiTech.Enumeration/blob/main/media/icon.png</icon>
     <License>MIT</License>
     <Authors>Julien nascimento</Authors>
     <Company>Haidai Tech</Company>
@@ -28,5 +27,9 @@
     <Summary>Use enumeration classes instead of enum types</Summary>
     <PackageReadmeFile>Readme.md</PackageReadmeFile>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\media\icon.png" Pack="true" PackagePath="\" />
+    <None Include="..\Readme.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
 </Project>
