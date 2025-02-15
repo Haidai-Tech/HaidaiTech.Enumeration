@@ -146,3 +146,39 @@ var xml = stringWriter.ToString();
 Assert.Contains("<Name>First</Name>", xml); // Name should appear in XML
 Assert.Contains("<Id>1</Id>", xml); // Id should appear in XML
 ```
+
+### EnumerationConverter Integration
+
+Another important detail: We have included the `EnumerationConverter` in this project to simplify the construction of your application's payload. To enable it, add the following code to your application:
+
+```csharp
+builder.Services.AddControllers()
+                .AddJsonOptions(options =>
+                {
+                    options.JsonSerializerOptions.Converters.Add(new EnumerationConverter<TravelModeEnumerator>());
+                    options.JsonSerializerOptions.Converters.Add(new EnumerationConverter<RoutingPreferencesEnumerator>());
+                });
+```
+
+With this converter in place, your application's payload only needs to include the Enumeration property name:
+
+```json
+{
+  "alternativeRoutes": true,
+  "travelMode": "DrivingByCar", 
+  "routingPreferences": "TrafficAware"
+}
+```
+
+If the converter is not configured as described above, you will need to include the Enumeration code, which adds unnecessary complexity to your application:
+
+```json
+{
+  "alternativeRoutes": true,
+  "travelMode": {"id": 1, "name": "DrivingByCar"}, // unnecessary complexity
+  "routingPreferences": {"id": 1, "name": "TrafficAware"} // unnecessary complexity
+}
+```
+
+By using the `EnumerationConverter`, you can streamline your payload and improve the readability of your code. 
+
